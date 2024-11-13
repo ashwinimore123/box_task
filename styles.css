@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #ff5f80;
+    margin-bottom: 20px;
+}
+
+.option {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.option label {
+    cursor: pointer;
+    display: block;
+}
+
+.option .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option .discount {
+    color: #ff5f80;
+    font-weight: bold;
+    background: #ffe8ec;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.option .price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.option .old-price {
+    font-size: 0.9em;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.option .subtext {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.option.popular {
+    border-color: #ff5f80;
+}
+
+.option.popular .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff5f80;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.selection {
+    margin-top: 10px;
+}
+
+.selection .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.selection label {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.selection select {
+    padding: 5px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.free-delivery {
+    color: #ff5f80;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.total {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5f80;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #ff3f61;
+}
